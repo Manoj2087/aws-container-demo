@@ -41,3 +41,10 @@ echo -e "---------------------------------------"
 docker run -d -p 8080:80 \
     --name=my-app \
      my-app:latest
+
+# open http://localhost:8080
+
+
+# view image layers
+# docker images -a
+# docker image inspect my-app -f '{{.RootFS}}'
